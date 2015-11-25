@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class LearnJava
+{
+	public static void main(String[] args)
+	{
+		Scanner  userInput = new Scanner(System.in);
+		System.out.println("Enter amount of grades");
+		int amountOfGrades = userInput.nextInt();
+		float average = 0.0f;
+		 
+		for(int i = 0; i < amountOfGrades; i = i + 1)
+		{
+			System.out.println("Enter grade #" + (i + 1) + " ");
+			int value = userInput.nextInt();
+			average = average + value;
+		}
+		
+		average = average / amountOfGrades;
+		
+		System.out.println(" Average" + average);
+		
+	}
+}
