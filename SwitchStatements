@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class LearnJava
+{
+	public static void main(String[] args)
+	{
+		Scanner userInput = new Scanner(System.in);
+		System.out.println("1.New Game \n2.Load Game\n3.Options\n4.Credits");
+		
+		int selection = userInput.nextInt();
+		
+		switch(selection)
+		{
+		case 1:
+			System.out.println("You chose New Game");
+			break;
+		case 2:
+			System.out.println("You chose Load Game");
+			break;
+		case 3:
+			System.out.println("You chose Options");
+			break;
+		case 4:
+			System.out.println("You chose Credits");
+			break;
+		default :
+				System.out.println("Number not in Range");
+			break;
+		}
+	}
+}
