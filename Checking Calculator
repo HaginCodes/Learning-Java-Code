@@ -1,0 +1,62 @@
+// just a the same calculator as before but written to handle more tasks. Maybe Jeff could write this i don't know... 
+
+import java.util.Scanner;
+public class LearnJava
+{
+	public static void main(String[] args)
+	{
+		boolean running = true;
+		int num1 = 0, num2 = 0;
+		char operator = 0;
+		Scanner scanner = new Scanner(System.in);
+		
+		do
+		{
+		
+			System.out.print("Enter the first number:");
+			do 
+			{
+				num1 = scanner.nextInt();
+			}while(num1 <  1 || num1 > 1000);
+			System.out.println("Enter an Operator:");
+			do
+			{
+			operator = scanner.next().charAt(0);
+			}while(operator != '+' && operator != '-' && operator != '*' && operator != '/');
+			System.out.print("Enter the second number:");
+			do
+			{
+				num2 = scanner.nextInt();
+			}while(num2 < 1 || num2 > 1000);
+			
+			
+			System.out.println(num1 + "" + operator + "" + num2 + "=");
+			switch(operator)
+			
+			{
+			case '+':
+				System.out.println(num1 + num2);
+				break;
+			case '-':
+				System.out.println(num1 - num2);
+				break;
+			case '*':
+				System.out.println(num1 * num2);
+				break;
+			case '/':
+				System.out.println(num1 / num2);
+				break;
+			
+		}
+		
+			char result;
+			System.out.print("would you like to make another calculation? Enter y/n");
+			result = scanner.next().charAt(0);
+			
+			running = (result == 'y');
+			
+		}while(running);
+		
+	}
+
+}
