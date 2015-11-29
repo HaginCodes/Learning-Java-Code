@@ -1,0 +1,15 @@
+// a different way to store and call variables
+
+public class CodingMadeEasy 
+{
+	public static void main(String[] args)
+	{
+		float[] gpa = { 10, 15, 16, 20, 19, 49, 20 };
+		
+		for(float i : gpa)
+		{
+			System.out.println(i);
+		}
+			
+	}
+}
