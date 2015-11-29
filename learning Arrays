@@ -1,0 +1,15 @@
+// just getting familiar with arrays
+
+public class hagincodes
+{
+	public static void main(String[] args)
+	{
+		float[] students = new float[30];
+		
+		for(int i = 0; i < 30; i++)
+		{
+			students[i] = 10;
+			System.out.println(students[i]);
+		}
+	}
+}
